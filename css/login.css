@@ -14,7 +14,7 @@ body{
 }
 .wrapper{
     width:420px;
-    background: purple;
+    background: rgb(153, 187, 216);
     color: #fff;
     border-radius: 10px;
     padding: 30px 40px;
@@ -99,11 +99,7 @@ margin-right:3px;
     text-decoration: underline;
 }
 
-body {
-    background: linear-gradient(to right, #de43bd, #6d2367); /* Horizontal gradient from red to green */
-    /* or */
-    background: radial-gradient(circle, #d10d89, #3b0131); /* Radial gradient from red to green */
-  }
+
   
 #fops{
     display: flex;
