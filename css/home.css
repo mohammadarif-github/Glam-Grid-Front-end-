@@ -33,3 +33,6 @@
     margin-right: auto;
 
 }
+#all li a:hover{
+    color: aquamarine;
+}

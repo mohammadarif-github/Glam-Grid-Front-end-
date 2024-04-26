@@ -19,6 +19,11 @@
             margin-right: 15px;
             /* Adjust the value as needed */
         }
+       
+        .category-box {
+            cursor: pointer;
+        }
+        
     </style>
 </head>
 
@@ -36,7 +41,7 @@
 
 
     <!-- nav bar connect  -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -73,7 +78,7 @@
                         <a href="../html/register.html" class="nav-link">Register</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#"><button style="font-size:24px"> <i class="fa fa-shopping-cart"></i></button></a>
+                      <a href="../html/Add_to_card.html"><button class="btn cart-button" style="font-size:24px" > <i class="fas fa-shopping-cart text-white"></i></button></a>
                     </li>
 
                 </ul>
@@ -81,10 +86,240 @@
         </div>
     </nav>
     <!-- nav bar end  -->
+<br>
 
-    <h1>Not Working......</h1>
 
-    
+
+
+  <div class="container mt-3">
+    <div class="row">
+      <div class="col-md-2">
+        
+        <div class="flex-shrink-0 p-1 " style="width: 150px;" id="catt">
+            <a href="/" class="d-flex align-items-center pb-3 mb-3 link-body-emphasis text-decoration-none border-bottom">
+            <!-- <svg class="bi pe-none me-2" width="30" height="24"><use xlink:href="/html/about_us.html"/></svg> -->
+            <span class="fs-3 fw-bold">Catagories</span>
+            </a>
+            <ul class="list-unstyled ps-1">
+                <li class="mb-1">
+                    <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#Men-collapse" aria-expanded="true">
+                    Men
+                    </button>
+                    <div class=""  id="Men-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-2 small">
+                        <li class=" d-flex justify-content-center"><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded ">T-shirt</a></li>
+                        <li class=" d-flex justify-content-center"><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Panjabi</a></li>
+                        <li class=" d-flex justify-content-center"><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">Pant</a></li>
+                    </ul>
+                    </div>
+                </li>
+                <li class="mb-1">
+                    <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#Women-collapse" aria-expanded="false">
+                    Women
+                    </button>
+                    <div class="collapse" id="Women-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-2 small">
+                        <li class=" d-flex justify-content-center"><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">a</a></li>
+                        <li class=" d-flex justify-content-center"><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">b</a></li>
+                        <li class=" d-flex justify-content-center"><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">c</a></li>
+                        <li class=" d-flex justify-content-center"><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">d</a></li>
+                    </ul>
+                    </div>
+                </li>
+                <li class="mb-1">
+                    <button class="btn btn-toggle d-inline-flex align-items-center rounded border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#board-collapse" aria-expanded="false">
+                    another
+                    </button>
+                    <div class="collapse" id="board-collapse">
+                    <ul class="btn-toggle-nav list-unstyled fw-normal pb-2 small">
+                        <li class=" d-flex justify-content-center"><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">1</a></li>
+                        <li class=" d-flex justify-content-center"><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">2</a></li>
+                        <li class=" d-flex justify-content-center"><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">3</a></li>
+                        <li class=" d-flex justify-content-center"><a href="#" class="link-body-emphasis d-inline-flex text-decoration-none rounded">4</a></li>
+                    </ul>
+                    </div>
+                </li>
+        
+            </ul>
+        </div>
+        
+      </div>
+      <div class="col-md-10">
+        <div class="row ">
+
+          <div class="col-md-4 ">
+            <div class="card">
+              <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product Image">
+              <div class="card-body">
+                <h5 class="card-title">Product 1</h5>
+                <p class="card-text">Description of product 1.</p>
+                <a href="#" class="btn btn-primary">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4">
+            <div class="card">
+              <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product Image">
+              <div class="card-body">
+                <h5 class="card-title">Product 2</h5>
+                <p class="card-text">Description of product 2.</p>
+                <a href="#" class="btn btn-primary">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card">
+              <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product Image">
+              <div class="card-body">
+                <h5 class="card-title">Product 3</h5>
+                <p class="card-text">Description of product 3.</p>
+                <a href="#" class="btn btn-primary">Buy Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mt-5">
+            <div class="card">
+              <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product Image">
+              <div class="card-body">
+                <h5 class="card-title">Product 3</h5>
+                <p class="card-text">Description of product 3.</p>
+                <a href="#" class="btn btn-primary">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4 mt-5">
+            <div class="card">
+              <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product Image">
+              <div class="card-body">
+                <h5 class="card-title">Product 3</h5>
+                <p class="card-text">Description of product 3.</p>
+                <a href="#" class="btn btn-primary">Buy Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mt-5">
+            <div class="card">
+              <img src="https://via.placeholder.com/300" class="card-img-top" alt="Product Image">
+              <div class="card-body">
+                <h5 class="card-title">Product 3</h5>
+                <p class="card-text">Description of product 3.</p>
+                <a href="#" class="btn btn-primary">Buy Now</a>
+              </div>
+            </div>
+          </div>
+         
+          <!-- <div class="row mt-5">
+            <div class="col-md-12">
+              <button class="btn btn-primary" id="prevBtn">Previous</button>
+              <button class="btn btn-primary float-right" id="nextBtn">Next</button>
+            </div>
+          </div> -->
+
+        </div>
+      </div>
+    </div>
+  </div> 
+  
+
+
+  
+
+<br><br>
+<!-- footer -->
+<footer class="bg-dark" id="tempaltemo_footer">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-4 pt-5">
+                <h2 class="h2 text-light border-bottom pb-3 border-light logo">GLAM GRID</h2>
+                <ul class="list-unstyled text-light footer-link-list">
+                    <li>
+                        <i class="fas fa-map-marker-alt fa-fw"></i>
+                       <a class="text-decoration-none">Chittagong,Bangladesh</a> 
+                    </li>
+                    <li>
+                        <i class="fa fa-phone fa-fw"></i>
+                        <a class="text-decoration-none" href="tel:01954190364">01954190364</a>
+                    </li>
+                    <li>
+                        <i class="fa fa-envelope fa-fw"></i>
+                        <a class="text-decoration-none" href="mailto:glamgrid@company.com">glamgrid@company.com</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-4 pt-5">
+                <h2 class="h2 text-light border-bottom pb-3 border-light">Products</h2>
+                <ul class="list-unstyled text-light footer-link-list">
+                    
+                    <li><a class="text-decoration-none" href="#">Men's </a></li>
+                    <li><a class="text-decoration-none" href="#">Women's </a></li>
+                    <li><a class="text-decoration-none" href="#">Popular Dress</a></li>
+                    
+                </ul>
+            </div>
+
+            <div class="col-md-4 pt-5">
+                <h2 class="h2 text-light border-bottom pb-3 border-light">Further Info</h2>
+                <ul class="list-unstyled text-light footer-link-list">
+                    <li><a class="text-decoration-none" href="../html/home.html">Home</a></li>
+                    <li><a class="text-decoration-none" href="../html/about_us.html">About Us</a></li>
+                    <li><a class="text-decoration-none" href="#">Shop Locations</a></li>
+                    <li ><a class="text-decoration-none" href="../html/Contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="row text-light mb-4">
+            <div class="col-12 mb-3">
+                <div class="w-100 my-3 border-top border-light"></div>
+            </div>
+            <div class="col-auto me-auto">
+                <ul class="list-inline text-left footer-icons">
+                    <li class="list-inline-item border border-light rounded-circle text-center">
+                        <a class="text-light text-decoration-none" target="_blank" href="http://facebook.com/"><i class="fab fa-facebook-f fa-lg fa-fw"></i></a>
+                    </li>
+                    <li class="list-inline-item border border-light rounded-circle text-center">
+                        <a class="text-light text-decoration-none" target="_blank" href="https://www.instagram.com/"><i class="fab fa-instagram fa-lg fa-fw"></i></a>
+                    </li>
+                    <li class="list-inline-item border border-light rounded-circle text-center">
+                        <a class="text-light text-decoration-none" target="_blank" href="https://twitter.com/"><i class="fab fa-twitter fa-lg fa-fw"></i></a>
+                    </li>
+                    <li class="list-inline-item border border-light rounded-circle text-center">
+                        <a class="text-light text-decoration-none" target="_blank" href="https://www.linkedin.com/"><i class="fab fa-linkedin fa-lg fa-fw"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <!-- <div class="col-auto">
+                <label class="sr-only" for="subscribeEmail">Email address</label>
+                <div class="input-group mb-2">
+                    <input type="text" class="form-control bg-dark border-light" id="subscribeEmail" placeholder="Email address">
+                    <div class="input-group-text btn-success text-light">Subscribe</div>
+                </div>
+            </div> -->
+        </div>
+    </div>
+
+    <div class="w-100 bg-black py-3">
+        <div class="container">
+            <div class="row pt-2">
+                <div class="col-12">
+                    <p class="text-left text-light">
+                        Copyright &copy; 2024 Glam Grid 
+                        | Designed by <a rel="sponsored" href="#" target="_blank">SynergyCoders</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+<!-- end footer -->
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"crossorigin="anonymous"></script>
 
